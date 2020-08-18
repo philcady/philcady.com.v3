@@ -11,25 +11,34 @@
   min-height: 100vh;
 }
 
-.App-logo {
+.logo {
   height: 118px;
   width: 417px;
   background-repeat: no-repeat;
   background-image: url(./assets/motorcycle-vector-20.png);
   overflow: hidden;
+  position: fixed;
+  bottom: 13px;
+  left: 13px;
 }
-
+.icons {
+  padding:15px 7px;
+}
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   flex-wrap: wrap;
   color: white;
   grid-column: 1;
   grid-row: 1;
-  padding-left: 10px;
 }
-
+nav div {
+  padding-left: 20px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+}
 .projects-container {
   overflow: auto;
   grid-column: 2;
@@ -96,3 +105,4 @@ a:visited {
   position: absolute;
   width: 1px;
 }
+
