@@ -7,7 +7,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <div className="grid-container">
+        <Header />
+        <h1>projects</h1>
+      </div>
     </div>
   );
 }

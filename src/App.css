@@ -11,9 +11,6 @@
 .App-logo {
   height: 118px;
   width: 417px;
-  position: absolute;
-  top: 20vh;
-  left: 5vw;
   background-repeat: no-repeat;
   background-image: url(./assets/motorcycle-vector-20.png);
   overflow: hidden;
@@ -21,17 +18,35 @@
 
 .App-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
   color: white;
 }
 
 .App-link {
   color: #09d3ac;
 }
-
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: white;
+}
 .sr-only {
   border: 0; 
   clip: rect(0 0 0 0); 
