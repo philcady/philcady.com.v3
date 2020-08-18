@@ -1,5 +1,6 @@
-import React from 'react';
-import Header from './components/header';
+import React from 'react'
+import Header from './components/Header'
+import Projects from './components/Projects'
 
 import './App.css';
 
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <div className="grid-container">
         <Header />
-        <h1>projects</h1>
+        <Projects />
       </div>
     </div>
   );

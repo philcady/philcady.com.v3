@@ -1,6 +1,9 @@
 .App .grid-container {
   display:grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5px 0;
+  height: 100vh;
   background-image: url(./assets/asphalt-white-v2.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,16 +19,52 @@
   overflow: hidden;
 }
 
-.App-header {
+header {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   color: white;
+  grid-column: 1;
+  grid-row: 1
 }
 
-.App-link {
-  color: #09d3ac;
+.projects-container {
+  overflow: auto;
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project {
+    width: 75%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+.project::before {
+  content: '';
+  padding-top: 100%;
+  float: left;
+}
+.project::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.project h1.title {
+  margin: -2.5rem 0;
+  color: white;
+}
+.vw {
+  background-image: url(./assets/vw_beetle.png);
+}
+.penny-mac {
+  background-image: url(./assets/penny_mac.png);
+}
+.city-natl-bank {
+  background-image: url(./assets/computer-1833058_1920.png);
 }
 nav ul {
   list-style: none;
