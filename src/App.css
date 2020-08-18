@@ -23,11 +23,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   color: white;
   grid-column: 1;
-  grid-row: 1
+  grid-row: 1;
+  padding-left: 10px;
 }
 
 .projects-container {
