@@ -77,14 +77,14 @@ p {
 }
 
 .project {
-  width: 75%;
+  width: 90%;
   background-repeat: no-repeat;
   background-size: contain;
 }
 /* responsvie sizing of images */
 .project::before {
   content: '';
-  padding-top: 80%;
+  padding-top: 60%;
   float: left;
 }
 .project::after {
@@ -97,12 +97,15 @@ p {
   color: white;
 }
 .vw {
+  cursor: pointer;
   background-image: url(./assets/vw_beetle.png);
 }
 .penny-mac {
+  cursor: pointer;
   background-image: url(./assets/penny_mac.png);
 }
 .city-natl-bank {
+  cursor: pointer;
   background-image: url(./assets/computer-1833058_1920.png);
 }
 nav ul {
@@ -166,6 +169,10 @@ a:visited {
   max-width: 500px;
   padding: 2rem;
 }
+.modal img {
+  max-width: 100%;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
