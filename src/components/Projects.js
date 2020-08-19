@@ -1,7 +1,9 @@
-import React from "react";
+import React from "react"
+import ArrowIcon from "../icons/arrow.svg"
 
 export default function Projects() {
   return (
+    <ArrowIcon />
     <div className="projects-container">
       <div className="project vw">
         <h1 className="title">VW</h1>
@@ -13,5 +15,6 @@ export default function Projects() {
         <h1 className="title">City National Bank</h1>
       </div>
     </div>
+    <ArrowIcon />
   )
 }
