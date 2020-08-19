@@ -15,13 +15,13 @@ function Header(params) {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="hover-underline-animation">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" className="hover-underline-animation">About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" className="hover-underline-animation">Contact</Link>
           </li>
         </ul>
 
@@ -51,6 +51,9 @@ function Home() {
       </a>
       <a href="https://github.com/philcady">
         <svg width="36" height="40" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>Github</title><path d="M8 0C3.6 0 0 3.6 0 8a7.991 7.991 0 0 0 5.467 7.6c.4.067.533-.2.533-.4v-1.333c-2.2.466-2.667-1.067-2.667-1.067-.333-.933-.866-1.2-.866-1.2-.8-.467 0-.467 0-.467.8.067 1.2.8 1.2.8.733 1.2 1.866.867 2.333.667.067-.533.267-.867.533-1.067-1.8-.2-3.666-.866-3.666-3.933 0-.867.333-1.6.8-2.133 0-.267-.334-1.067.133-2.134 0 0 .667-.2 2.2.8.667-.2 1.333-.266 2-.266s1.333.066 2 .266c1.533-1.066 2.2-.8 2.2-.8.467 1.134.133 1.934.067 2.134.533.533.8 1.266.8 2.133 0 3.067-1.867 3.733-3.667 3.933.267.267.533.734.533 1.467v2.2c0 .2.134.467.534.4A7.991 7.991 0 0 0 15.933 8C16 3.6 12.4 0 8 0z" fill="#FFF" fillRule="evenodd"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/philcady">
+      <svg width="36" height="34" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>Linkedin</title><path d="M15.333 0H.667C.267 0 0 .267 0 .667v14.666c0 .4.267.667.667.667h14.666c.4 0 .667-.267.667-.667V.667c0-.4-.267-.667-.667-.667zm-10.6 13.667H2.4V6h2.4v7.667h-.067zm-1.2-8.734c-.733 0-1.4-.6-1.4-1.4 0-.733.6-1.4 1.4-1.4.734 0 1.4.6 1.4 1.4 0 .8-.6 1.4-1.4 1.4zm10.134 8.734h-2.4V9.933c0-.866 0-2-1.2-2-1.267 0-1.4.934-1.4 1.934v3.8h-2.4V6h2.266v1.067c.334-.6 1.067-1.2 2.267-1.2 2.4 0 2.867 1.6 2.867 3.666v4.134z" fill="#FFF" fillRule="evenodd"/></svg>
       </a>
     </div>
   );
