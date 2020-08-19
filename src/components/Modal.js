@@ -1,8 +1,8 @@
 import React from "react"
 import ReactDOM from 'react-dom';
 
-const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
-  <React.Fragment>
+const Modal = ({ children, isShowing, hide }) => isShowing ? ReactDOM.createPortal(
+  <>
     <div className="modal-overlay"/>
     <div className="modal-wrapper" aria-modal aria-hidden tabIndex={-1} role="dialog">
       <div className="modal">
@@ -11,12 +11,10 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <p>
-          Hello, I'm the modal content area.
-        </p>
+        { children }
       </div>
     </div>
-  </React.Fragment>, document.body
+  </>, document.body
 ) : null;
 
 export default Modal;
