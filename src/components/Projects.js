@@ -1,13 +1,12 @@
 import React from "react"
 import Modal from './Modal'
 import useModal from './useModal'
-
-const projArr = [
-  {id:1, title: 'VW', thumb: '../static/media/vw_beetle.png', alt:'VW Beetle'},
-  {id:2, title: 'Penny Mac', thumb: '../static/media/penny_mac.71973829.png', alt: 'Penny Mac'},
-]
+import cardData from './cardData'
+import Card from './Card'
 
 export default function Projects() {
+
+  const card = cardData.map(cards => <Card key={cards.id} title={cards.title} />)
   const {isShowing, toggle} = useModal();
 
   return (
@@ -17,10 +16,7 @@ export default function Projects() {
           hide={toggle}
         >
           {
-            <>
-              <h1>{projArr[1].title}</h1>
-              <img src={projArr[1].thumb} alt={projArr[1].alt} />
-            </>
+            card
           }
 
         </Modal>
